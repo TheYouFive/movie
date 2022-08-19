@@ -1,0 +1,23 @@
+.footer-container {
+  background-color: #464646;
+}
+
+.footer-container p {
+  margin: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.footer-container a:hover {
+  color: #e6e6e6;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}

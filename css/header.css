@@ -1,0 +1,36 @@
+header {
+  z-index: 9999;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 150px;
+}
+
+.nav li {
+  margin-right: 50px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav li a {
+  color: #ffffff;
+  transition: 0.3s;
+}

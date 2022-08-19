@@ -1,0 +1,345 @@
+@media (min-width: 280px) and (max-width: 767px) {
+  .drawer-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+    padding: 15px;
+    transition: 0.3s;
+  }
+
+  .drawer-box.change {
+    background-color: #ffffff;
+  }
+
+  .drawer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 20px;
+    z-index: 9999;
+  }
+
+  .drawer-bar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    transition: 0.3s;
+  }
+
+  .drawer-bar.change {
+    background-color: #000000;
+  }
+
+  .drawer-bar:nth-child(1) {
+    top: 0;
+  }
+
+  .drawer-bar:nth-child(2) {
+    top: 50%;
+  }
+
+  .drawer-bar:nth-child(3) {
+    top: 100%;
+  }
+
+  .drawer.show .drawer-bar:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .drawer.show .drawer-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .drawer.show .drawer-bar:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .drawer.show .drawer-bar {
+    background-color: #000000;
+  }
+
+  .drawer-content {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .drawer-nav {
+    position: absolute;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .drawer-nav li {
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    line-height: 3rem;
+    width: 180px;
+  }
+
+  .drawer-nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .drawer-content.show {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  }
+
+  header {
+    display: none;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  .inner {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .boxoffice {
+    height: 2174.44px;
+  }
+
+  .boxoffice-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxoffice-container a {
+    text-align: center;
+  }
+
+  .korea-boxoffice-content,
+  .worldwide-boxoffice-content {
+    flex-direction: column;
+  }
+
+  .boxoffice-text span {
+    font-size: 14px;
+  }
+
+  .korea-boxoffice,
+  .worldwide-boxoffice {
+    top: 110px;
+  }
+
+  .korea-top,
+  .worldwide-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxoffice-container a {
+    font-size: 18px;
+  }
+
+  .korea-top {
+    margin-bottom: 20px;
+  }
+
+  .boxoffice-rank {
+    margin-bottom: 15px;
+  }
+
+  .boxoffice-rank i {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+
+  .opening-date img {
+    width: 17px;
+  }
+
+  .boxoffice-imagetext {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .korea-boxoffice_top1-5,
+  .korea-boxoffice_top6-10,
+  .worldwide-boxoffice_top1-5,
+  .worldwide-boxoffice_top6-10 {
+    width: 100%;
+  }
+
+  .korea-boxoffice-box,
+  .worldwide-boxoffice-box {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .korea-boxoffice_top1-5 .korea-boxoffice-box,
+  .worldwide-boxoffice_top1-5 .worldwide-boxoffice-box {
+    margin-right: 0;
+  }
+
+  .korea-boxoffice_top1-5 .korea-boxoffice-box:last-child,
+  .worldwide-boxoffice_top1-5 .worldwide-boxoffice-box:last-child {
+    margin-bottom: 20px;
+  }
+
+  .new-movie-content__box,
+  .comingsoon-movie-content__box,
+  .recommendation-movie-content__box {
+    width: 50%;
+  }
+
+  .new-movie-content__image,
+  .comingsoon-movie-content__image,
+  .recommendation-movie-content__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .new-movie-content__box {
+    justify-content: center;
+  }
+
+  .new-movie-content__box:hover,
+  .comingsoon-movie-content__box:hover,
+  .recommendation-movie-content__box:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  .footer-content {
+    font-size: 13px;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .boxoffice {
+    height: 1245.07px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  .inner {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .nav {
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-right: 0;
+  }
+
+  .new-movie-content__box,
+  .comingsoon-movie-content__box,
+  .recommendation-movie-content__box {
+    width: 25%;
+  }
+
+  .boxoffice-rank {
+    margin-bottom: 20px;
+  }
+
+  .boxoffice-rank i {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .korea-boxoffice-content .new-movie-content__box:hover,
+  .comingsoon-movie-content__box:hover,
+  .recommendation-movie-content__box:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  .boxoffice-text span {
+    font-size: 18px;
+  }
+
+  .korea-boxoffice_top1-5,
+  .korea-boxoffice_top6-10,
+  .worldwide-boxoffice_top1-5,
+  .worldwide-boxoffice_top6-10 {
+    width: 100%;
+  }
+
+  .korea-boxoffice-box,
+  .worldwide-boxoffice-box {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .boxoffice-imagetext {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .korea-boxoffice_top1-5 .korea-boxoffice-box,
+  .worldwide-boxoffice_top1-5 .worldwide-boxoffice-box {
+    margin-right: 10px;
+  }
+
+  .korea-boxoffice_top6-10 .korea-boxoffice-box,
+  .worldwide-boxoffice_top6-10 .worldwide-boxoffice-box {
+    margin-left: 10px;
+  }
+
+  .korea-boxoffice_top1-5 .korea-boxoffice-box:last-child,
+  .worldwide-boxoffice_top1-5 .worldwide-boxoffice-box:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .inner {
+    width: 100%;
+    border-radius: 0;
+  }
+}

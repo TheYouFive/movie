@@ -1,0 +1,194 @@
+.boxoffice {
+  margin-top: 150px;
+  height: 982px;
+}
+
+.boxoffice-container {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.boxoffice-container a {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.korea-boxoffice-content,
+.worldwide-boxoffice-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.korea-boxoffice,
+.worldwide-boxoffice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.korea-boxoffice,
+.worldwide-boxoffice.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.worldwide-boxoffice,
+.korea-boxoffice.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.korea-top,
+.worldwide-top {
+  display: flex;
+  position: relative;
+}
+
+.korea-top::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0062;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.worldwide-top::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff0062;
+  bottom: -10px;
+  left: 50%;
+  transition: 0.3s;
+}
+
+.korea-top.hide::after {
+  width: 0;
+  left: 50%;
+}
+.worldwide-top.show::after {
+  width: 100%;
+  left: 0;
+}
+
+.korea-boxoffice-box,
+.worldwide-boxoffice-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.korea-boxoffice-box:hover,
+.worldwide-boxoffice-box:hover {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.06);
+}
+
+.korea-boxoffice_top1-5 .korea-boxoffice-box,
+.worldwide-boxoffice_top1-5 .worldwide-boxoffice-box {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.korea-boxoffice_top6-10 .korea-boxoffice-box,
+.worldwide-boxoffice_top6-10 .worldwide-boxoffice-box {
+  margin-bottom: 20px;
+}
+
+.korea-boxoffice-box:last-child,
+.worldwide-boxoffice-box:last-child {
+  margin-bottom: 0;
+}
+
+.boxoffice-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+  width: 200px;
+}
+
+.boxoffice-text span {
+  color: #646464;
+  font-size: 16px;
+}
+
+.boxoffice-imagetext {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.boxoffice-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.boxoffice-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.boxoffice-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.boxoffice-rank i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.gold {
+  color: #ffd700;
+}
+
+.silver {
+  color: #c0c0c0;
+}
+
+.bronze {
+  color: #cd7f32;
+}
+
+.opening-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-date img {
+  margin-right: 5px;
+}
+
+.korea-boxoffice_top1-5,
+.korea-boxoffice_top6-10,
+.worldwide-boxoffice_top1-5,
+.worldwide-boxoffice_top6-10 {
+  width: 50%;
+}

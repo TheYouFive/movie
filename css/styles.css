@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import "./component.css";
+@import "./home.css";
+@import "./header.css";
+@import "./boxoffice.css";
+@import "./footer.css";
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+hr {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(175, 175, 175, 0.3);
+  margin: 20px auto;
+}
+
+.drawer-box,
+.drawer,
+.drawer-content {
+  display: none;
+}
