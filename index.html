@@ -1,817 +1,928 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+  </head>
 
-<head>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movie</title>
-</head>
-
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-  <div class="drawer-box"></div>
-  <div class="drawer">
-    <span class="drawer-bar"></span>
-    <span class="drawer-bar"></span>
-    <span class="drawer-bar"></span>
-  </div>
-
-  <div class="drawer-content">
-    <div class="drawer-nav">
-      <li>
-        <a href="#home"><i class="fa-solid fa-house"></i></a>
-      </li>
-      <li>
-        <a href="#boxoffice">박스오피스</a>
-      </li>
-      <li>
-        <a href="#new-movie">최신영화</a>
-      </li>
-      <li>
-        <a href="#comingsoon-movie">개봉예정영화</a>
-      </li>
-      <li>
-        <a href="#recommendation-movie">추천영화</a>
-      </li>
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
+    <div class="drawer-box"></div>
+    <div class="drawer">
+      <span class="drawer-bar"></span>
+      <span class="drawer-bar"></span>
+      <span class="drawer-bar"></span>
     </div>
-  </div>
 
-  <header>
-    <div class="nav-inner">
-      <div class="nav">
+    <div class="drawer-content">
+      <div class="drawer-nav">
         <li>
-          <a href=""><i class="fa-solid fa-house"></i></a>
+          <a href="#home"><i class="fa-solid fa-house"></i></a>
         </li>
         <li>
-          <a href="">박스오피스</a>
+          <a href="#boxoffice">박스오피스</a>
         </li>
         <li>
-          <a href="">최신영화</a>
+          <a href="#new-movie">최신영화</a>
         </li>
         <li>
-          <a href="">개봉예정영화</a>
+          <a href="#comingsoon-movie">개봉예정영화</a>
         </li>
         <li>
-          <a href="">추천영화</a>
+          <a href="#recommendation-movie">추천영화</a>
         </li>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section class="home" id="home">
-      <div class="home-image">
-        <img src="./imgs/cinema.jpg">
-      </div>
-    </section>
-
-    <section class="boxoffice" id="boxoffice">
-      <div class="inner">
-        <h1>역대 박스오피스</h1>
-        <hr />
-        <div class="boxoffice-container">
-          <a class="korea-top">한국 역대 박스오피스 Top 10</a>
-          <a class="worldwide-top">전 세계 역대 박스오피스 Top 10</a>
-          <div class="korea-boxoffice">
-            <div class="korea-boxoffice-content">
-              <div class="korea-boxoffice_top1-5">
-                <div class="korea-boxoffice-box korea-top1">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal gold"></i>
-                    <h2>1위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/roaring.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>명량</h3>
-                      <span>개봉일 : 2014-07-30</span>
-                      <span>관객수 : 1761만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top2">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal silver"></i>
-                    <h2>2위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/job.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>극한직업</h3>
-                      <span>개봉일 : 2019-01-23</span>
-                      <span>관객수 : 1626만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top3">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal bronze"></i>
-                    <h2>3위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/god.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>신과함께 - 죄와 벌</h3>
-                      <span>개봉일 : 2017-12-20</span>
-                      <span>관객수 : 1441만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top4">
-                  <div class="boxoffice-rank">
-                    <h2>4위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/market.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>국제시장</h3>
-                      <span>개봉일 : 2014-12-17</span>
-                      <span>관객수 : 1425만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top5">
-                  <div class="boxoffice-rank">
-                    <h2>5위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/endgame.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>어벤져스 : 엔드게임</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/KR - Korea (South).png" />
-                        <span>개봉일 : 2019-04-24</span>
-                      </div>
-                      <span>관객수 : 1393만</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="korea-boxoffice_top6-10">
-                <div class="korea-boxoffice-box korea-top6">
-                  <div class="boxoffice-rank">
-                    <h2>6위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/frozen.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>겨울왕국2</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/KR - Korea (South).png" />
-                        <span>개봉일 : 2019-11-21</span>
-                      </div>
-                      <span>관객수 : 1374만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top7">
-                  <div class="boxoffice-rank">
-                    <h2>7위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/avatar.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>아바타</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/KR - Korea (South).png" />
-                        <span>개봉일 : 2009-12-17</span>
-                      </div>
-                      <span>관객수 : 1362만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top8">
-                  <div class="boxoffice-rank">
-                    <h2>8위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/veteran.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>베테랑</h3>
-                      <span>개봉일 : 2015-08-05</span>
-                      <span>관객수 : 1341만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top9">
-                  <div class="boxoffice-rank">
-                    <h2>9위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/monster.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>괴물</h3>
-                      <span>개봉일 : 2006-07-27</span>
-                      <span>관객수 : 1301만</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="korea-boxoffice-box korea-top10">
-                  <div class="boxoffice-rank">
-                    <h2>10위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/thief.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>도둑들</h3>
-                      <span>개봉일 : 2012-07-25</span>
-                      <span>관객수 : 1298만</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="worldwide-boxoffice">
-            <div class="worldwide-boxoffice-content">
-              <div class="worldwide-boxoffice_top1-5">
-                <div class="worldwide-boxoffice-box korea-top1">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal gold"></i>
-                    <h2>1위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/avatar.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>아바타</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2009-12-18</span>
-                      </div>
-                      <span>매출 : 28억 4740만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top2">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal silver"></i>
-                    <h2>2위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/endgame.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>어벤져스 : 엔드게임</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2019-04-26</span>
-                      </div>
-                      <span>매출 : 27억 9750만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top3">
-                  <div class="boxoffice-rank">
-                    <i class="fa-solid fa-medal bronze"></i>
-                    <h2>3위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/titanic.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>타이타닉</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 1997-12-19</span>
-                      </div>
-                      <span>매출 : 22억 164만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top4">
-                  <div class="boxoffice-rank">
-                    <h2>4위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/starwars.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>스타워즈 : 깨어난 포스</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2015-12-18</span>
-                      </div>
-                      <span>매출 : 20억 6822만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top5">
-                  <div class="boxoffice-rank">
-                    <h2>5위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/infinite.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>어벤져스 : 인피니티 워</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2018-04-27</span>
-                      </div>
-                      <span>매출 : 20억 4835만 달러</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="worldwide-boxoffice_top6-10">
-                <div class="worldwide-boxoffice-box korea-top6">
-                  <div class="boxoffice-rank">
-                    <h2>6위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/spider.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>스파이더맨 : 노 웨이 홈</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2021-12-17</span>
-                      </div>
-                      <span>매출 : 19억 123만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top7">
-                  <div class="boxoffice-rank">
-                    <h2>7위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/jurassic.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>쥬라기 월드</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2015-06-12</span>
-                      </div>
-                      <span>매출 : 16억 7,040만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top8">
-                  <div class="boxoffice-rank">
-                    <h2>8위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/lion.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>라이온 킹</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2019-07-19</span>
-                      </div>
-                      <span>매출 : 16억 5694만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top9">
-                  <div class="boxoffice-rank">
-                    <h2>9위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/avengers.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>어벤져스</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2012-05-04</span>
-                      </div>
-                      <span>매출 : 15억 1882만 달러</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="worldwide-boxoffice-box korea-top10">
-                  <div class="boxoffice-rank">
-                    <h2>10위</h2>
-                  </div>
-                  <div class="boxoffice-imagetext">
-                    <div class="boxoffice-image">
-                      <img src="./imgs/boxoffice/seven.jpg" />
-                    </div>
-                    <div class="boxoffice-text">
-                      <h3>분노의 질주 : 더 세븐</h3>
-                      <div class="opening-date">
-                        <img src="./imgs/US - United States.png" />
-                        <span>개봉일 : 2015-04-03</span>
-                      </div>
-                      <span>매출 : 15억 1504만 달러</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <header>
+      <div class="nav-inner">
+        <div class="nav">
+          <li>
+            <a href=""><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="">박스오피스</a>
+          </li>
+          <li>
+            <a href="">최신영화</a>
+          </li>
+          <li>
+            <a href="">개봉예정영화</a>
+          </li>
+          <li>
+            <a href="">추천영화</a>
+          </li>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="component-section new-movie" id="new-movie">
-      <div class="inner">
-        <div class="component-container new-movie-container">
-          <h1>최신영화</h1>
+    <main>
+      <section class="home" id="home">
+        <div class="home-image">
+          <img src="./imgs/cinema.jpg" />
+        </div>
+      </section>
+
+      <section class="boxoffice" id="boxoffice">
+        <div class="inner">
+          <h1>역대 박스오피스</h1>
           <hr />
-          <div class="component-movie-content new-movie-content">
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/emergency.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>비상선언</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 2022-08-03</span>
+          <div class="boxoffice-container">
+            <a class="korea-top">한국 역대 박스오피스 Top 10</a>
+            <a class="worldwide-top">전 세계 역대 박스오피스 Top 10</a>
+            <div class="korea-boxoffice">
+              <div class="korea-boxoffice-content">
+                <div class="korea-boxoffice_top1-5">
+                  <div class="korea-boxoffice-box korea-top1">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal gold"></i>
+                      <h2>1위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/roaring.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>명량</h3>
+                        <span>개봉일 : 2014-07-30</span>
+                        <span>관객수 : 1761만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top2">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal silver"></i>
+                      <h2>2위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/job.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>극한직업</h3>
+                        <span>개봉일 : 2019-01-23</span>
+                        <span>관객수 : 1626만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top3">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal bronze"></i>
+                      <h2>3위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/god.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>신과함께 - 죄와 벌</h3>
+                        <span>개봉일 : 2017-12-20</span>
+                        <span>관객수 : 1441만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top4">
+                    <div class="boxoffice-rank">
+                      <h2>4위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/market.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>국제시장</h3>
+                        <span>개봉일 : 2014-12-17</span>
+                        <span>관객수 : 1425만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top5">
+                    <div class="boxoffice-rank">
+                      <h2>5위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/endgame.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>어벤져스 : 엔드게임</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/KR - Korea (South).png" />
+                          <span>개봉일 : 2019-04-24</span>
+                        </div>
+                        <span>관객수 : 1393만</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="korea-boxoffice_top6-10">
+                  <div class="korea-boxoffice-box korea-top6">
+                    <div class="boxoffice-rank">
+                      <h2>6위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/frozen.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>겨울왕국2</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/KR - Korea (South).png" />
+                          <span>개봉일 : 2019-11-21</span>
+                        </div>
+                        <span>관객수 : 1374만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top7">
+                    <div class="boxoffice-rank">
+                      <h2>7위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/avatar.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>아바타</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/KR - Korea (South).png" />
+                          <span>개봉일 : 2009-12-17</span>
+                        </div>
+                        <span>관객수 : 1362만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top8">
+                    <div class="boxoffice-rank">
+                      <h2>8위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/veteran.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>베테랑</h3>
+                        <span>개봉일 : 2015-08-05</span>
+                        <span>관객수 : 1341만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top9">
+                    <div class="boxoffice-rank">
+                      <h2>9위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/monster.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>괴물</h3>
+                        <span>개봉일 : 2006-07-27</span>
+                        <span>관객수 : 1301만</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="korea-boxoffice-box korea-top10">
+                    <div class="boxoffice-rank">
+                      <h2>10위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/thief.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>도둑들</h3>
+                        <span>개봉일 : 2012-07-25</span>
+                        <span>관객수 : 1298만</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/hansan.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>한산 : 용의 출현</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2022-07-27</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/topgun.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>탑건 : 매버릭</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2022-06-22</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/goodbye.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>헤어질 결심</h3>
-                <span>장르 : 멜로/로맨스</span>
-                <span>개봉일 : 2022-06-29</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/cure.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>큐어</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2022-07-06</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/elvis.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>엘비스</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 2022-07-13</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/roundup.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>범죄도시2</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2022-05-18</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/alienoid.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>외계+인 1부</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2022-07-20</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/homefrom.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>아이를 위한 아이</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 2022-07-21</span>
-              </div>
-            </div>
-            <div class="component-content__box new-movie-content__box">
-              <div class="component-content__image new-movie-content__image">
-                <img src="./imgs/new/thor.jpg" />
-              </div>
-              <div class="component-content__text new-movie-content__text">
-                <h3>토르 : 러브 앤 썬더</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2022-07-06</span>
+            <div class="worldwide-boxoffice">
+              <div class="worldwide-boxoffice-content">
+                <div class="worldwide-boxoffice_top1-5">
+                  <div class="worldwide-boxoffice-box korea-top1">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal gold"></i>
+                      <h2>1위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/avatar.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>아바타</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2009-12-18</span>
+                        </div>
+                        <span>매출 : 28억 4740만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top2">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal silver"></i>
+                      <h2>2위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/endgame.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>어벤져스 : 엔드게임</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2019-04-26</span>
+                        </div>
+                        <span>매출 : 27억 9750만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top3">
+                    <div class="boxoffice-rank">
+                      <i class="fa-solid fa-medal bronze"></i>
+                      <h2>3위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/titanic.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>타이타닉</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 1997-12-19</span>
+                        </div>
+                        <span>매출 : 22억 164만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top4">
+                    <div class="boxoffice-rank">
+                      <h2>4위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/starwars.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>스타워즈 : 깨어난 포스</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2015-12-18</span>
+                        </div>
+                        <span>매출 : 20억 6822만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top5">
+                    <div class="boxoffice-rank">
+                      <h2>5위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/infinite.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>어벤져스 : 인피니티 워</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2018-04-27</span>
+                        </div>
+                        <span>매출 : 20억 4835만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="worldwide-boxoffice_top6-10">
+                  <div class="worldwide-boxoffice-box korea-top6">
+                    <div class="boxoffice-rank">
+                      <h2>6위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/spider.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>스파이더맨 : 노 웨이 홈</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2021-12-17</span>
+                        </div>
+                        <span>매출 : 19억 123만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top7">
+                    <div class="boxoffice-rank">
+                      <h2>7위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/jurassic.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>쥬라기 월드</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2015-06-12</span>
+                        </div>
+                        <span>매출 : 16억 7,040만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top8">
+                    <div class="boxoffice-rank">
+                      <h2>8위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/lion.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>라이온 킹</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2019-07-19</span>
+                        </div>
+                        <span>매출 : 16억 5694만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top9">
+                    <div class="boxoffice-rank">
+                      <h2>9위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/avengers.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>어벤져스</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2012-05-04</span>
+                        </div>
+                        <span>매출 : 15억 1882만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="worldwide-boxoffice-box korea-top10">
+                    <div class="boxoffice-rank">
+                      <h2>10위</h2>
+                    </div>
+                    <div class="boxoffice-imagetext">
+                      <div class="boxoffice-image">
+                        <img src="./imgs/boxoffice/seven.jpg" />
+                      </div>
+                      <div class="boxoffice-text">
+                        <h3>분노의 질주 : 더 세븐</h3>
+                        <div class="opening-date">
+                          <img src="./imgs/US - United States.png" />
+                          <span>개봉일 : 2015-04-03</span>
+                        </div>
+                        <span>매출 : 15억 1504만 달러</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="component-section comingsoon-movie" id="comingsoon-movie">
-      <div class="inner">
-        <div class="component-container comingsoon-movie-container">
-          <h1>개봉예정영화</h1>
-          <hr />
-          <div class="component-movie-content comingsoon-movie-content">
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/hunt.jpg" />
+      <section class="common-section new-movie" id="new-movie">
+        <div class="inner">
+          <div class="common-container new-movie-container">
+            <h1>최신영화</h1>
+            <hr />
+            <div class="common-movie-content new-movie-content">
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/emergency.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>비상선언</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 2022-08-03</span>
+                </div>
               </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>헌트</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2022-08-10</span>
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/hansan.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>한산 : 용의 출현</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2022-07-27</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/zeros.jpg" />
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/topgun.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>탑건 : 매버릭</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2022-06-22</span>
+                </div>
               </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>제로스 앤 원스</h3>
-                <span>장르 : 스릴러</span>
-                <span>개봉일 : 2022-08-10</span>
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/goodbye.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>헤어질 결심</h3>
+                  <span>장르 : 멜로/로맨스</span>
+                  <span>개봉일 : 2022-06-29</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/nope.jpg" />
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/cure.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>큐어</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2022-07-06</span>
+                </div>
               </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>놉</h3>
-                <span>장르 : 미스터리</span>
-                <span>개봉일 : 2022-08-17</span>
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/elvis.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>엘비스</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 2022-07-13</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/drown.jpg" />
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/roundup.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>범죄도시2</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2022-05-18</span>
+                </div>
               </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>파로호</h3>
-                <span>장르 : 스릴러</span>
-                <span>개봉일 : 2022-08-18</span>
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/alienoid.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>외계+인 1부</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2022-07-20</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/fulltime.jpg" />
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/homefrom.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>아이를 위한 아이</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 2022-07-21</span>
+                </div>
               </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>풀타임</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 2022-08-18</span>
-              </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/revolver.jpg" />
-              </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>리볼버</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2022-08-18</span>
-              </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/awake.jpg" />
-              </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>어웨이크</h3>
-                <span>장르 : 스릴러</span>
-                <span>개봉일 : 2022-08-24</span>
-              </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/limit.jpg" />
-              </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>리미트</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2022-08-31</span>
-              </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/northman.jpg" />
-              </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>노스맨</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 2022-08-31</span>
-              </div>
-            </div>
-            <div class="component-content__box comingsoon-movie-content__box">
-              <div class="component-content__image comingsoon-movie-content__image">
-                <img src="./imgs/comingsoon/black.jpg" />
-              </div>
-              <div class="component-content__text comingsoon-movie-content__text">
-                <h3>블랙폰</h3>
-                <span>장르 : 스릴러</span>
-                <span>개봉일 : 2022-09-07</span>
+              <div class="common-content__box new-movie-content__box">
+                <div class="common-content__image new-movie-content__image">
+                  <img src="./imgs/new/thor.jpg" />
+                </div>
+                <div class="common-content__text new-movie-content__text">
+                  <h3>토르 : 러브 앤 썬더</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2022-07-06</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="component-section recommendation-movie" id="recommendation-movie">
-      <div class="inner">
-        <div class="component-container recommendation-movie-container">
-          <h1>추천영화</h1>
-          <hr />
-          <div class="component-movie-content recommendation-movie-content">
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/inception.jpg" />
+      <section class="common-section comingsoon-movie" id="comingsoon-movie">
+        <div class="inner">
+          <div class="common-container comingsoon-movie-container">
+            <h1>개봉예정영화</h1>
+            <hr />
+            <div class="common-movie-content comingsoon-movie-content">
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/hunt.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>헌트</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2022-08-10</span>
+                </div>
               </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>인셉션</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2010-07-21</span>
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/zeros.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>제로스 앤 원스</h3>
+                  <span>장르 : 스릴러</span>
+                  <span>개봉일 : 2022-08-10</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/interstellar.jpg" />
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/nope.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>놉</h3>
+                  <span>장르 : 미스터리</span>
+                  <span>개봉일 : 2022-08-17</span>
+                </div>
               </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>인터스텔라</h3>
-                <span>장르 : SF</span>
-                <span>개봉일 : 2014-11-06</span>
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/drown.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>파로호</h3>
+                  <span>장르 : 스릴러</span>
+                  <span>개봉일 : 2022-08-18</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/shawshank.jpg" />
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/fulltime.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>풀타임</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 2022-08-18</span>
+                </div>
               </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>쇼생크 탈출</h3>
-                <span>장르 : 드라마</span>
-                <span>개봉일 : 1995-01-28</span>
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/revolver.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>리볼버</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2022-08-18</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/3idiots.jpg" />
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/awake.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>어웨이크</h3>
+                  <span>장르 : 스릴러</span>
+                  <span>개봉일 : 2022-08-24</span>
+                </div>
               </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>세얼간이</h3>
-                <span>장르 : 코미디</span>
-                <span>개봉일 : 2011-08-18</span>
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/limit.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>리미트</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2022-08-31</span>
+                </div>
               </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/ryan.jpg" />
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/northman.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>노스맨</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 2022-08-31</span>
+                </div>
               </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>라이언 일병 구하기</h3>
-                <span>장르 : 전쟁</span>
-                <span>개봉일 : 1998-09-12</span>
-              </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/knight.jpg" />
-              </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>다크나이트</h3>
-                <span>장르 : 액션</span>
-                <span>개봉일 : 2008-08-06</span>
-              </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/joker.jpg" />
-              </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>조커</h3>
-                <span>장르 : 스릴러</span>
-                <span>개봉일 : 2019-10-02</span>
-              </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/taegukgi.jpg" />
-              </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>태극기 휘날리며</h3>
-                <span>장르 : 전쟁</span>
-                <span>개봉일 : 2004-02-05</span>
-              </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/devil.jpg" />
-              </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>악마를 보았다</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2010-08-12</span>
-              </div>
-            </div>
-            <div class="component-content__box recommendation-movie-content__box">
-              <div class="component-content__image recommendation-movie-content__image">
-                <img src="./imgs/recommendation/murder.jpg" />
-              </div>
-              <div class="component-content__text recommendation-movie-content__text">
-                <h3>살인의 추억</h3>
-                <span>장르 : 범죄</span>
-                <span>개봉일 : 2003-04-25</span>
+              <div class="common-content__box comingsoon-movie-content__box">
+                <div
+                  class="common-content__image comingsoon-movie-content__image"
+                >
+                  <img src="./imgs/comingsoon/black.jpg" />
+                </div>
+                <div
+                  class="common-content__text comingsoon-movie-content__text"
+                >
+                  <h3>블랙폰</h3>
+                  <span>장르 : 스릴러</span>
+                  <span>개봉일 : 2022-09-07</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-content">
-        <p>
-          본 사이트에 사용된 모든 이미지의 출처는 네이버 영화입니다.<br /><a href="https://movie.naver.com"
-            target="_blank">https://movie.naver.com</a>
-        </p>
-        <p>이미지의 저작권은 모두 각 영화사에 있습니다.</p>
-        <p>
-          본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용으로
-          제작되었습니다.
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
-<script src="https://kit.fontawesome.com/537b61becd.js" crossorigin="anonymous"></script>
-<script src="./js/boxoffice.js"></script>
-<script src="./js/boxoffice-title.js"></script>
-<script src="./js/header.js"></script>
-<script src="./js/drawer.js"></script>
+      <section
+        class="common-section recommendation-movie"
+        id="recommendation-movie"
+      >
+        <div class="inner">
+          <div class="common-container recommendation-movie-container">
+            <h1>추천영화</h1>
+            <hr />
+            <div class="common-movie-content recommendation-movie-content">
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/inception.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>인셉션</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2010-07-21</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/interstellar.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>인터스텔라</h3>
+                  <span>장르 : SF</span>
+                  <span>개봉일 : 2014-11-06</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/shawshank.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>쇼생크 탈출</h3>
+                  <span>장르 : 드라마</span>
+                  <span>개봉일 : 1995-01-28</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/3idiots.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>세얼간이</h3>
+                  <span>장르 : 코미디</span>
+                  <span>개봉일 : 2011-08-18</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/ryan.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>라이언 일병 구하기</h3>
+                  <span>장르 : 전쟁</span>
+                  <span>개봉일 : 1998-09-12</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/knight.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>다크나이트</h3>
+                  <span>장르 : 액션</span>
+                  <span>개봉일 : 2008-08-06</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/joker.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>조커</h3>
+                  <span>장르 : 스릴러</span>
+                  <span>개봉일 : 2019-10-02</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/taegukgi.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>태극기 휘날리며</h3>
+                  <span>장르 : 전쟁</span>
+                  <span>개봉일 : 2004-02-05</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/devil.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>악마를 보았다</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2010-08-12</span>
+                </div>
+              </div>
+              <div
+                class="common-content__box recommendation-movie-content__box"
+              >
+                <div
+                  class="common-content__image recommendation-movie-content__image"
+                >
+                  <img src="./imgs/recommendation/murder.jpg" />
+                </div>
+                <div
+                  class="common-content__text recommendation-movie-content__text"
+                >
+                  <h3>살인의 추억</h3>
+                  <span>장르 : 범죄</span>
+                  <span>개봉일 : 2003-04-25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <p>
+            본 사이트에 사용된 모든 이미지의 출처는 네이버 영화입니다.<br /><a
+              href="https://movie.naver.com"
+              target="_blank"
+              >https://movie.naver.com</a
+            >
+          </p>
+          <p>이미지의 저작권은 모두 각 영화사에 있습니다.</p>
+          <p>
+            본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용으로
+            제작되었습니다.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/537b61becd.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/boxoffice.js"></script>
+  <script src="./js/boxoffice-title.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/drawer.js"></script>
 </html>
